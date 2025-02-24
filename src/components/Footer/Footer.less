@@ -1,0 +1,34 @@
+@import url('../../index.less');
+
+footer {
+    background: rgb(0,0,0);
+    opacity: .5;
+    color: @text;
+    box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.5);
+    width:100%;
+    padding: 15px;
+    #logo {
+        max-width: 275px;
+        padding-left: 3px;
+    }
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+        font-family: "Libre Baskerville", serif;
+        font-size: 18px;
+        li {
+            padding: 10px 0;
+            a {
+                text-decoration: none;
+                color: @text;
+            }
+        }
+    }
+    .logo-container {
+        display: flex;
+        align-items: center;
+    }
+    span {
+        padding-left: 10px;
+    }
+}

@@ -1,0 +1,27 @@
+
+@import url('../../index.less');
+
+header {
+    background: rgb(0,0,0);
+    opacity: .5;
+    color: @text;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    #logo {
+        max-width: 100px;
+        padding-left: 3px;
+    }
+    >div {
+        display: flex;
+        align-items: center;
+        ul {
+            justify-content: flex-end;
+            margin-bottom: 0;
+            display: flex;
+            li, >li {
+                list-style-type: none;
+                padding: 0 50px;
+            }
+        }
+    }
+}

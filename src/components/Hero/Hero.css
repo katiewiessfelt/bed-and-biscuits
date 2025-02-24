@@ -1,0 +1,292 @@
+@font-face {
+  font-family: 'Jost';
+  font-style: italic;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v18/92zJtBhPNqw73oHH7BbQp4-B6XlrZu0ENI0.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Jost';
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v18/92zJtBhPNqw73oHH7BbQp4-B6XlrZm0FNI0.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Jost';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v18/92zJtBhPNqw73oHH7BbQp4-B6XlrZrMFNI0.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Jost';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v18/92zJtBhPNqw73oHH7BbQp4-B6XlrZu0FNI0.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Jost';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v18/92zJtBhPNqw73oHH7BbQp4-B6XlrZt8FNI0.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Jost';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v18/92zJtBhPNqw73oHH7BbQp4-B6XlrZjMCNI0.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Jost';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v18/92zJtBhPNqw73oHH7BbQp4-B6XlrZgoCNI0.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Jost';
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v18/92zJtBhPNqw73oHH7BbQp4-B6XlrZm0CNI0.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Jost';
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v18/92zJtBhPNqw73oHH7BbQp4-B6XlrZkQCNI0.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v18/92zPtBhPNqw79Ij1E865zBUv7myjJAVG.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v18/92zPtBhPNqw79Ij1E865zBUv7mwjJQVG.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v18/92zPtBhPNqw79Ij1E865zBUv7mz9JQVG.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v18/92zPtBhPNqw79Ij1E865zBUv7myjJQVG.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v18/92zPtBhPNqw79Ij1E865zBUv7myRJQVG.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v18/92zPtBhPNqw79Ij1E865zBUv7mx9IgVG.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v18/92zPtBhPNqw79Ij1E865zBUv7mxEIgVG.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v18/92zPtBhPNqw79Ij1E865zBUv7mwjIgVG.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v18/92zPtBhPNqw79Ij1E865zBUv7mwKIgVG.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Jost';
+  font-style: italic;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v18/92zJtBhPNqw73oHH7BbQp4-B6XlrZu0ENI0.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Jost';
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v18/92zJtBhPNqw73oHH7BbQp4-B6XlrZm0FNI0.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Jost';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v18/92zJtBhPNqw73oHH7BbQp4-B6XlrZrMFNI0.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Jost';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v18/92zJtBhPNqw73oHH7BbQp4-B6XlrZu0FNI0.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Jost';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v18/92zJtBhPNqw73oHH7BbQp4-B6XlrZt8FNI0.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Jost';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v18/92zJtBhPNqw73oHH7BbQp4-B6XlrZjMCNI0.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Jost';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v18/92zJtBhPNqw73oHH7BbQp4-B6XlrZgoCNI0.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Jost';
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v18/92zJtBhPNqw73oHH7BbQp4-B6XlrZm0CNI0.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Jost';
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v18/92zJtBhPNqw73oHH7BbQp4-B6XlrZkQCNI0.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v18/92zPtBhPNqw79Ij1E865zBUv7myjJAVG.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v18/92zPtBhPNqw79Ij1E865zBUv7mwjJQVG.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v18/92zPtBhPNqw79Ij1E865zBUv7mz9JQVG.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v18/92zPtBhPNqw79Ij1E865zBUv7myjJQVG.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v18/92zPtBhPNqw79Ij1E865zBUv7myRJQVG.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v18/92zPtBhPNqw79Ij1E865zBUv7mx9IgVG.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v18/92zPtBhPNqw79Ij1E865zBUv7mxEIgVG.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v18/92zPtBhPNqw79Ij1E865zBUv7mwjIgVG.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v18/92zPtBhPNqw79Ij1E865zBUv7mwKIgVG.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/librebaskerville/v14/kmKhZrc3Hgbbcjq75U4uslyuy4kn0qNcaxY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/librebaskerville/v14/kmKnZrc3Hgbbcjq75U4uslyuy4kn0pNe.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/librebaskerville/v14/kmKiZrc3Hgbbcjq75U4uslyuy4kn0qviTjYw.ttf) format('truetype');
+}
+.hero-image-container {
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.hero-image-container > #overlay {
+  position: absolute;
+  align-content: center;
+  z-index: 2;
+}
+.hero-image-container .background-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.hero-image-container .background-image > img {
+  max-width: 100%;
+}

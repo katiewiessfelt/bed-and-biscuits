@@ -1,0 +1,90 @@
+@import url("../index.less");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+body,
+html {
+  background: @primary;
+  color: @text;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Jost", serif;
+}
+
+h1 {
+  font-size: 42px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+p {
+  font-family: "Libre Baskerville", serif;
+  font-size: 18px;
+}
+
+button {
+  background: @tertiary;
+  font-size: 24px;
+  font-family: "Jost", serif;
+  color: black;
+}
+
+.sepia-light,
+.sepia-med,
+.sepia-dark {
+  position: relative;
+  float: left;
+  cursor: pointer;
+}
+
+.sepia-light:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(207, 188, 145, 0.5);
+  transition: background 0.3s linear;
+}
+
+.sepia-med:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(185, 143, 97, 0.5);
+  transition: background 0.3s linear;
+}
+
+.sepia-dark:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(56, 38, 22, 0.8);
+    transition: background 0.3s linear;
+  }
