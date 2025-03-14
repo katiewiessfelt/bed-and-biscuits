@@ -40,8 +40,8 @@ function Slide({ image, specialName, forHumans, forPups, tagLine }) {
             <p className="text-center pb-3">{tagLine}</p>
           </div>
         </div>
-        <div className="col-6 specials-image-container">
-          <img className="specials-image" src={image}/>
+        <div className="col-6 overlay">
+          <img src={image}/>
         </div>
       </div>
     </>
@@ -76,7 +76,7 @@ function Home() {
         </div>
         <div id="carousel">
           <Carousel>
-            <Carousel.Item>
+            <Carousel.Item className="w-100">
               <Slide
                 image={breakfastSpecial}
                 specialName="Bark & Bite Combo"
@@ -85,7 +85,7 @@ function Home() {
                 tagLine="Come in and enjoy this tail-waggingly good pairing! 🐾☕️🍩"
               />
             </Carousel.Item>
-            <Carousel.Item>
+            <Carousel.Item className="w-100">
               <Slide
                 image={breakfastSpecial2}
                 specialName="🐾 Tail-Wagging Treat Duo"
@@ -94,7 +94,7 @@ function Home() {
                 tagLine="Because chilly days are better with a warm drink and a happy pup!"
               />
             </Carousel.Item>
-            <Carousel.Item>
+            <Carousel.Item className="w-100">
               <Slide
                 image={birthdaySpecial}
                 specialName="🎂 Paw-ty Celebration Special (Pre-Order Only)"

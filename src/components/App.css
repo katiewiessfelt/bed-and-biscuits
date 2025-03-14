@@ -295,8 +295,8 @@
 }
 body,
 html {
-  background: #636E5E;
-  color: white;
+  background: #636e5e;
+  color: #ffffff;
 }
 h1,
 h2,
@@ -322,7 +322,7 @@ p {
   font-size: 18px;
 }
 button {
-  background: #C39F77;
+  background: #c39f77;
   font-size: 24px;
   font-family: "Jost", serif;
   color: black;
