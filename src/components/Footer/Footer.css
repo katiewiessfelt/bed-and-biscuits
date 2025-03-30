@@ -274,7 +274,7 @@
 footer {
   background: #000000;
   opacity: 0.5;
-  color: white;
+  color: #ffffff;
   box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.5);
   width: 100%;
   padding: 15px;
@@ -294,7 +294,7 @@ footer ul li {
 }
 footer ul li a {
   text-decoration: none;
-  color: white;
+  color: #ffffff;
 }
 footer .logo-container {
   display: flex;
