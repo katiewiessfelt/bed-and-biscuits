@@ -271,28 +271,33 @@
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/librebaskerville/v14/kmKiZrc3Hgbbcjq75U4uslyuy4kn0qviTjYw.ttf) format('truetype');
 }
-header {
+nav {
   background: #000000;
   opacity: 0.5;
-  color: white;
+  color: #ffffff;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
   padding: 15px;
 }
-header #logo {
+nav #logo {
   max-width: 100px;
   padding-left: 3px;
 }
-header > div {
+nav > div {
   display: flex;
   align-items: center;
 }
-header > div ul {
+nav > div ul {
   justify-content: flex-end;
   margin-bottom: 0;
   display: flex;
 }
-header > div ul li,
-header > div ul > li {
+nav > div ul li,
+nav > div ul > li {
   list-style-type: none;
   padding: 0 50px;
+}
+nav > div ul li > a,
+nav > div ul > li > a {
+  color: white;
+  text-decoration: none;
 }
