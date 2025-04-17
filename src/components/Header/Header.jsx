@@ -8,11 +8,14 @@ function Header() {
     <>
       <nav>
         <div className="row">
-          <div className="col-6">
+          <div className="col-3">
             <Link to="/"><img id="logo" src={logo}/></Link>
           </div>
-          <div className="col-6">
+          <div className="col-9">
             <ul>
+            <li>
+                <Link to="/"><h3>Home</h3></Link>
+              </li>
               <li>
                 <Link to="/bakery"><h3>Bakery</h3></Link>
               </li>
