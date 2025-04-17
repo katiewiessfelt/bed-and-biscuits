@@ -37,7 +37,7 @@ function Footer() {
             </p>
           </div>
           <div className="col-2">
-            <h4>Bakery</h4>
+            <a href="/bakery"><h4>Bakery</h4></a>
             <ul>
               <li><a href="#">Specials</a></li>
               <li><a href="#">Human Treats</a></li>

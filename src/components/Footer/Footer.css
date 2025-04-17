@@ -303,3 +303,7 @@ footer .logo-container {
 footer span {
   padding-left: 10px;
 }
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
