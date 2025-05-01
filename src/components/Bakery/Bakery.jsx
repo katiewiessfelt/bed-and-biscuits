@@ -44,10 +44,11 @@ function MenuItem({ title, description }) {
 function Bakery() {
   const [isOpen1, setIsOpen1] = useState(true);
   const [isOpen2, setIsOpen2] = useState(true);
+  const [isOpen3, setIsOpen3] = useState(true);
 
   return (
     <>
-      <div className="row d-flexa">
+      <div className="row d-flex" id="bakery">
         <div className="col-3 photo-gutter">
           <img src={photo1} />
           <img src={photo2} />
@@ -61,24 +62,25 @@ function Bakery() {
             <h1>Bakery</h1>
             <p>Where sweet treats meet wagging tails!</p>
           </div>
-          {/* HUMAN MENU */}
-          <div className="row mt-5">
+          {/* SPECIALS MENU */}
+          <div className="row mt-4">
             <div className="d-flex flex-row">
-              <div className="d-flex align-items-center" >
+              <div className="d-flex align-items-center">
                 <h3
                   className="collapse-header mb-0"
                   onClick={() => setIsOpen1(!isOpen1)}
-                  aria-controls="human-treats-menu"
+                  aria-controls="specials-treats-menu"
                   aria-expanded={isOpen1}
+                  id="bakery-specials"
                 >
-                  Human Treats
+                  Specials
                 </h3>
               </div>
               <div className="d-flex align-items-center" width="100%">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   onClick={() => setIsOpen1(!isOpen1)}
-                  class={isOpen1 ? "rotate icon" : "icon"}
+                  className={isOpen1 ? "rotate icon" : "icon"}
                   viewBox="0 0 320 512"
                   fill="#c39f77"
                 >
@@ -88,13 +90,100 @@ function Bakery() {
               <div className="d-flex align-items-center tagline">
                 <Fade in={!isOpen1}>
                   <p className="mb-0">
-                    <i>doughnuts, brownies, breads, cookies, pies, cakes</i>
+                    <i>Treats of the Week - Paws Down Delicious!</i>
                   </p>
                 </Fade>
               </div>
             </div>
             {isOpen1 ? (
               <Collapse in={isOpen1}>
+                <div id="specials-menu-content">
+                  <SectionItem
+                    title="Bark & Bite Combo"
+                    tagline="Come in and enjoy this tail-waggingly good pairing! 🐾☕️🍩"
+                  />
+                  <ul>
+                    <MenuItem
+                      title="For the Humans"
+                      description="Vanilla Bean Latte (hot or iced) Homemade Blueberry Scone topped with a light lemon glaze"
+                    />
+                    <MenuItem
+                      title="For the Pups"
+                      description="Puppy Latte (whipped cream with a sprinkle of crumbled dog treats) and Peanut Butter Pupcake made with dog-safe ingredients, topped with a carob 'frosting'"
+                    />
+                  </ul>
+
+                  <SectionItem
+                    title="Tail-Wagging Treat Duo"
+                    tagline="Because chilly days are better with a warm drink and a happy pup! 🐾"
+                  />
+                  <ul>
+                    <MenuItem
+                      title="For the Humans"
+                      description="A Warm Vanilla Chai Latte, infused with comforting spices, paired with a Buttery Almond Croissant for a flaky, nutty treat"
+                    />
+                    <MenuItem
+                      title="For the Pups"
+                      description="A Pumpkin Spice Pup Cup (whipped goat's milk with a sprinkle of cinnamon) and a Peanut Butter & Oat Biscuit, baked fresh with all-natural ingredients"
+                    />
+                  </ul>
+
+                  <SectionItem
+                    title="Paw-ty Celebration Special"
+                    tagline="Because every birthday (or gotcha day!) deserves a shared treat! 🎂"
+                  />
+                  <ul>
+                    <li className="pb-2"><i>(Pre-Order Only)</i></li>
+                    <MenuItem
+                      title="For the Humans"
+                      description="A Slice of Decadent Chocolate Cake and a Cup of Freshly Brewed Espresso for the perfect pairing"
+                    />
+                    <MenuItem
+                      title="For the Pups"
+                      description="A Mini Peanut Butter Pupcake, topped with dog-safe yogurt “frosting,” and a Refreshing Goat's Milk & Honey Drink."
+                    />
+                  </ul>
+                </div>
+              </Collapse>
+            ) : (
+              ""
+            )}
+          </div>
+          {/* HUMAN MENU */}
+          <div className="row mt-4">
+            <div className="d-flex flex-row">
+              <div className="d-flex align-items-center">
+                <h3
+                  className="collapse-header mb-0"
+                  onClick={() => setIsOpen2(!isOpen2)}
+                  aria-controls="human-treats-menu"
+                  aria-expanded={isOpen2}
+                  id="human-treats"
+                >
+                  Human Treats
+                </h3>
+              </div>
+              <div className="d-flex align-items-center" width="100%">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  onClick={() => setIsOpen2(!isOpen2)}
+                  className={isOpen2 ? "rotate icon" : "icon"}
+                  viewBox="0 0 320 512"
+                  fill="#c39f77"
+                >
+                  <path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z" />
+                </svg>
+              </div>
+              <div className="d-flex align-items-center tagline">
+                <Fade in={!isOpen2}>
+                  <p className="mb-0">
+                    <i>doughnuts, brownies, breads, cookies, pies, cakes</i>
+                  </p>
+                </Fade>
+              </div>
+            </div>
+            {isOpen2 ? (
+              <Collapse in={isOpen2}>
                 <div id="human-menu-content">
                   <SectionItem
                     title="Doughnuts"
@@ -257,18 +346,19 @@ function Bakery() {
               <div>
                 <h3
                   className="collapse-header mb-0"
-                  onClick={() => setIsOpen2(!isOpen2)}
+                  onClick={() => setIsOpen3(!isOpen3)}
                   aria-controls="dog-menu-content"
-                  aria-expanded={isOpen2}
+                  aria-expanded={isOpen3}
+                  id="dog-treats"
                 >
                   Dog Treats
                 </h3>
               </div>
               <div className="d-flex align-items-center" width="100%">
                 <svg
-                  onClick={() => setIsOpen2(!isOpen2)}
+                  onClick={() => setIsOpen3(!isOpen3)}
                   xmlns="http://www.w3.org/2000/svg"
-                  class={isOpen2 ? "rotate icon" : "icon"}
+                  className={isOpen3 ? "rotate icon" : "icon"}
                   viewBox="0 0 320 512"
                   fill="#c39f77"
                 >
@@ -276,15 +366,15 @@ function Bakery() {
                 </svg>
               </div>
               <div className="align-self-center tagline">
-                <Fade in={!isOpen2}>
+                <Fade in={!isOpen3}>
                   <p className="mb-0">
                     <i>pup cups, pupcakes, fresh fruit, biscuits</i>
                   </p>
                 </Fade>
               </div>
             </div>
-            {isOpen2 ? (
-              <Collapse in="isOpen2">
+            {isOpen3 ? (
+              <Collapse in="isOpen3">
                 <div id="dog-menu-content">
                   <SectionItem
                     title="Pup Cups"
