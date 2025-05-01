@@ -1,0 +1,86 @@
+@import url("../../index.less");
+
+#side-image1 {
+  width: 80%;
+  height: auto;
+}
+li,
+> li {
+  list-style-type: disc;
+}
+
+h2,
+h1 {
+  color: @accent!important;
+}
+h3 {
+  color: @text!important;
+}
+
+h2 {
+  padding-right: 0.5em;
+}
+
+.background {
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 2em;
+}
+
+#account-form {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 3em;
+  border-color: @accent;
+  border-width: 0 1px 1px 1px;
+  border-style: solid;
+  button {
+    padding: 0 2rem;
+  }
+}
+> h4,
+h4 {
+  font-weight: normal;
+}
+.option-titles {
+  > div {
+    cursor: pointer;
+  }
+  > div:first-child {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  > div:nth-child(2) {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  > div:nth-child(3) {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  > div:nth-child(4) {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  > div.active {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+.boardered {
+  border-width: 1px;
+  border-style: solid;
+  border-color: @tertiary;
+}
+#account {
+  li {
+    list-style-type: none;
+    border-width: 1px;
+    border-color: @tertiary;
+    border-style: solid;
+    cursor: pointer;
+    &:nth-child(3) {
+      border-width: 1px;
+    }
+    &.active {
+      border-bottom-width: 0;
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+  }
+  .tab-filler {
+    border-width: 0 0 1px 0 !important;
+  }
+}
