@@ -71,7 +71,7 @@ function Home() {
       <div id="specials">
         <div className="row">
           <div className="col-12">
-            <img src={fullWidthLine}/>
+            <img className="mw-100" src={fullWidthLine}/>
           </div>
         </div>
         <div id="carousel">
@@ -99,7 +99,7 @@ function Home() {
                 image={carouselSpecial}
                 specialName="🎂 Paw-ty Celebration Special (Pre-Order Only)"
                 forHumans="A Slice of Decadent Chocolate Cake and a Cup of Freshly Brewed Espresso for the perfect pairing"
-                forPups="A Mini Peanut Butter Pupcake, topped with dog-safe yogurt “frosting,” and a Refreshing Goat’s Milk & Honey Drink."
+                forPups="A Mini Peanut Butter Pupcake, topped with dog-safe yogurt “frosting,” and a Refreshing Goat's Milk & Honey Drink."
                 tagLine="Because every birthday (or gotcha day!) deserves a shared treat!"
               />
             </Carousel.Item>
@@ -107,7 +107,7 @@ function Home() {
         </div>
         <div className="row">
           <div className="col-12">
-            <img src={fullWidthLine}/>
+            <img className="mw-100" src={fullWidthLine}/>
           </div>
         </div>
       </div>
