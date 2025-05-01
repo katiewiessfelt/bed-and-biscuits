@@ -130,42 +130,42 @@
   font-style: italic;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/librebaskerville/v14/kmKhZrc3Hgbbcjq75U4uslyuy4kn0qNcaxY.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/librebaskerville/v16/kmKhZrc3Hgbbcjq75U4uslyuy4kn0qNcaxY.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Libre Baskerville';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/librebaskerville/v14/kmKnZrc3Hgbbcjq75U4uslyuy4kn0pNe.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/librebaskerville/v16/kmKnZrc3Hgbbcjq75U4uslyuy4kn0pNe.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Libre Baskerville';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/librebaskerville/v14/kmKiZrc3Hgbbcjq75U4uslyuy4kn0qviTjYw.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/librebaskerville/v16/kmKiZrc3Hgbbcjq75U4uslyuy4kn0qviTjYw.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Libre Baskerville';
   font-style: italic;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/librebaskerville/v14/kmKhZrc3Hgbbcjq75U4uslyuy4kn0qNcaxY.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/librebaskerville/v16/kmKhZrc3Hgbbcjq75U4uslyuy4kn0qNcaxY.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Libre Baskerville';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/librebaskerville/v14/kmKnZrc3Hgbbcjq75U4uslyuy4kn0pNe.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/librebaskerville/v16/kmKnZrc3Hgbbcjq75U4uslyuy4kn0pNe.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Libre Baskerville';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/librebaskerville/v14/kmKiZrc3Hgbbcjq75U4uslyuy4kn0qviTjYw.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/librebaskerville/v16/kmKiZrc3Hgbbcjq75U4uslyuy4kn0qviTjYw.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Jost';
@@ -366,4 +366,21 @@ button {
   right: 0;
   background: rgba(56, 38, 22, 0.8);
   transition: background 0.3s linear;
+}
+.icon {
+  width: 2em;
+  height: 2em;
+  vertical-align: -0.125em;
+}
+svg {
+  transform: rotate(-90deg);
+  cursor: pointer;
+}
+.rotate {
+  transform: rotate(0deg);
+}
+button {
+  color: #ffffff;
+  background-color: #c39f77;
+  border-color: #c39f77;
 }
