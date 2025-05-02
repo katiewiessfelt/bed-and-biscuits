@@ -213,7 +213,7 @@ function Boarding() {
             <div className="row">
               <div className="col-2"></div>
               <div className="col-10">
-                <img style={{ width: '120%'}} src={accent1} />
+                <img style={{ width: "120%" }} src={accent1} />
               </div>
               <div className="row">
                 <div id="boarding-info" className="p-5 pt-0 pb-0">
@@ -278,7 +278,7 @@ function Boarding() {
             </div>
             <div className="row">
               <div>
-                <img style={{ width: '170%'}} src={accent2} />
+                <img style={{ width: "170%" }} src={accent2} />
               </div>
             </div>
           </div>
@@ -393,8 +393,11 @@ function Boarding() {
             </div>
           </div>
           <div id="account">
-            <img style={{ width: '170%'}} src={accent3} />
+            <img style={{ width: "170%" }} src={accent3} />
             <div className="row">
+              <div className="col-12 p-5">
+                <h2>After Hours Drop-Off Form</h2>
+              </div>
               <div className="col-8 p-5 pt-0">
                 <div>
                   <ul className="d-flex flex-row p-0 m-0 row tabs">
@@ -489,7 +492,7 @@ function Boarding() {
               </div>
             </div>
           </div>
-          <img style={{ width: '170%'}} src={accent4} />
+          <img style={{ width: "170%" }} src={accent4} />
         </div>
         <div className="col-5">
           <img className="mw-100" src={image} />
