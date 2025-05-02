@@ -4,7 +4,7 @@ import Home from "./Home/Home";
 import Hero from "./Hero/Hero";
 import Bakery from "./Bakery/Bakery";
 import Boarding from "./Boarding/Boarding";
-// import About from "./About/About";
+import About from "./About/About";
 // import Members from "./Members/Members";
 import "./App.css";
 import { Routes, Route, useLocation } from "react-router-dom";
@@ -23,7 +23,7 @@ function App() {
         <Route path={`${rootPath}/bakery`} element={<Bakery />} />
         {/* <Route path="/menu" element={<Menu />} /> */}
         <Route path={`${rootPath}/boarding`} element={<Boarding />} />
-        {/* <Route path="/about" element={<About />} /> */}
+        <Route path={`${rootPath}/about`} element={<About />} />
         {/* <Route path="/members" element={<Members />} /> */}
       </Routes>
       <Footer/>
