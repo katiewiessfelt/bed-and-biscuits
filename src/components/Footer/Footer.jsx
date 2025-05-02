@@ -54,10 +54,10 @@ function Footer() {
             </ul>
           </div>
           <div className="col-2">
-            <h4>About Us</h4>
+            <a href={`${rootPath}/about`}><h4>About Us</h4></a>
             <ul>
-              <li><a href={`${rootPath}/about-us`}>About</a></li>
-              <li><a href={`${rootPath}/about-us#contact`}>Keep In Touch</a></li>
+              <li><a href={`${rootPath}/about#about-us`}>About</a></li>
+              <li><a href={`${rootPath}/about#contact`}>Keep In Touch</a></li>
             </ul>
           </div>
         </div>

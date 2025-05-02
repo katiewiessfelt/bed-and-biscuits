@@ -5,7 +5,7 @@ import image from "../../assets/about-us.png";
 function About() {
   return (
     <>
-      <div className="row p-5">
+      <div className="row p-5 pb-0" id="about-us">
         <div className="col-6">
           <h4>
             Welcome to Bed and Biscuits, where sweet treats meet wagging tails!
@@ -30,10 +30,10 @@ function About() {
           </p>
         </div>
         <div className="col-6 d-flex justify-content-center">
-          <img className="w-auto" src={image} style={{ height: "height: 23em" }} />
+          <img src={image} className="h-75" />
         </div>
       </div>
-      <div className="row p-5">
+      <div className="row p-5 pt-0" id="contact">
         <div className="col-12">
           <h2 className="pb-4">Contact Us</h2>
           <form id="contact-us" className="p-5">
