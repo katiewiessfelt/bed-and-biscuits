@@ -5,7 +5,8 @@ import accent2 from "../../assets/boarding-accent2.png";
 import accent3 from "../../assets/boarding-accent3.png";
 import accent4 from "../../assets/boarding-accent4.png";
 import image from "../../assets/boarding-photos.png";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 function Package({ description, included, price, tagline }) {
   return (
@@ -204,6 +205,17 @@ function Boarding() {
     showSignUp(true);
     showLogin(false);
   };
+
+  const location = useLocation();
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.replace("#", "");
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
 
   return (
     <>

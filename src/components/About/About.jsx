@@ -1,8 +1,21 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./About.css";
 import image from "../../assets/about-us.png";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 function About() {
+  const location = useLocation();
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.replace("#", "");
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
+
   return (
     <>
       <div className="row p-5 pb-0" id="about-us">

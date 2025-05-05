@@ -1,13 +1,15 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./Home.css";
 import OpenHours from "./InfoComponents/OpenHours";
 import Contact from "./InfoComponents/Contact";
 import Location from "./InfoComponents/Location";
 import Carousel from "react-bootstrap/Carousel";
-import carouselSpecial3 from "../../assets/home-special3.jpg"
-import carouselSpecial from "../../assets/home-special1.jpg"
-import carouselSpecial2 from "../../assets/home-special2.jpg"
-import fullWidthLine from "../../assets/full-width-line.png"
+import carouselSpecial3 from "../../assets/home-special3.jpg";
+import carouselSpecial from "../../assets/home-special1.jpg";
+import carouselSpecial2 from "../../assets/home-special2.jpg";
+import fullWidthLine from "../../assets/full-width-line.png";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 function InfoComponent({ component }) {
   return (
@@ -24,31 +26,38 @@ function Slide({ image, specialName, forHumans, forPups, tagLine }) {
         <div className="col-6 carousel-text d-flex justify-content-end">
           <div className="col-10">
             <h2 className="text-center pb-3">Daily Specials</h2>
-            <br/>
+            <br />
             <h3 className="text-center pb-3">{specialName}</h3>
-            <br/>
+            <br />
             <h4>For the Humans:</h4>
-            <p>
-              {forHumans}
-            </p>
-            <br/>
+            <p>{forHumans}</p>
+            <br />
             <h4>For the Pups:</h4>
-            <p>
-              {forPups}
-            </p>
-            <br/>
+            <p>{forPups}</p>
+            <br />
             <p className="text-center pb-3">{tagLine}</p>
           </div>
         </div>
         <div className="col-6 overlay">
-          <img src={image}/>
+          <img src={image} />
         </div>
       </div>
     </>
-  )
+  );
 }
 
 function Home() {
+  const location = useLocation();
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.replace("#", "");
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
+
   return (
     <>
       <div id="welcome">
@@ -71,7 +80,7 @@ function Home() {
       <div id="specials">
         <div className="row">
           <div className="col-12">
-            <img className="mw-100" src={fullWidthLine}/>
+            <img className="mw-100" src={fullWidthLine} />
           </div>
         </div>
         <div id="carousel">
@@ -107,7 +116,7 @@ function Home() {
         </div>
         <div className="row">
           <div className="col-12">
-            <img className="mw-100" src={fullWidthLine}/>
+            <img className="mw-100" src={fullWidthLine} />
           </div>
         </div>
       </div>

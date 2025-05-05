@@ -13,17 +13,17 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 function App() {
   const location = useLocation();
   const rootPath = import.meta.env.VITE_ROOT_PATH
-  const showHero = location.pathname === `${rootPath}`;
+  const showHero = location.pathname === '/';
   return (
     <div className="mw-100" >
       {showHero && <Hero/>}
       <Header/>
       <Routes>
-        <Route path={`${rootPath}`} element={<Home />} />
-        <Route path={`${rootPath}/bakery`} element={<Bakery />} />
+        <Route path={'/'} element={<Home />} />
+        <Route path='/bakery' element={<Bakery />} />
         {/* <Route path="/menu" element={<Menu />} /> */}
-        <Route path={`${rootPath}/boarding`} element={<Boarding />} />
-        <Route path={`${rootPath}/about`} element={<About />} />
+        <Route path='/boarding' element={<Boarding />} />
+        <Route path='/about' element={<About />} />
         {/* <Route path="/members" element={<Members />} /> */}
       </Routes>
       <Footer/>

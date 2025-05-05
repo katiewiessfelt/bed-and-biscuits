@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Fade from "react-bootstrap/Fade";
+import { useLocation } from "react-router-dom";
 import Collapse from "react-bootstrap/Collapse";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Bakery.css";
@@ -45,6 +46,17 @@ function Bakery() {
   const [isOpen1, setIsOpen1] = useState(true);
   const [isOpen2, setIsOpen2] = useState(true);
   const [isOpen3, setIsOpen3] = useState(true);
+
+  const location = useLocation();
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.replace("#", "");
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
 
   return (
     <>
@@ -133,7 +145,9 @@ function Bakery() {
                     tagline="Because every birthday (or gotcha day!) deserves a shared treat! 🎂"
                   />
                   <ul>
-                    <li className="pb-2"><i>(Pre-Order Only)</i></li>
+                    <li className="pb-2">
+                      <i>(Pre-Order Only)</i>
+                    </li>
                     <MenuItem
                       title="For the Humans"
                       description="A Slice of Decadent Chocolate Cake and a Cup of Freshly Brewed Espresso for the perfect pairing"
